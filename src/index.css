@@ -5,9 +5,130 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(22, 22, 22);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.workouts{
+
+  display: grid;
+  grid-template-columns: 3fr;
+  
+  
+}
+
+.err{
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: rgb(237, 130, 130);
+  padding: 10px;
+}
+
+.right{
+  margin: auto;
+  margin-top: 20px;
+ 
+
+
+}
+
+.form{
+  padding: 30px;
+  padding-bottom: 20px;
+  width: 30rem;
+  background-color: rgb(53, 53, 53);
+  border-radius: 20px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  
+    & button{
+
+      background-color: rgb(123, 123, 123);
+      padding: 10px;
+      border-radius: 20px;
+      border: 0px;
+      width: 100%;
+      font-weight: 900;
+      color: white;
+      font-size: 15px;
+      
+    }
+}
+.exedet{
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  & input{
+    width: 300px;
+    height: 30px;
+    border: 0px ;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+  }
+  /* background-color: rgb(134, 181, 181); */
+}
+.header{
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: rgb(43, 43, 43);
+  height: 50px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.workoutcard{
+  margin: auto;
+  margin-top: 20px;
+  & h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+  color: white;
+  font-weight: 700;
+  padding: 0px 40px;
+  position: relative;
+  background-color: rgb(51, 51, 51);
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+
+}
+
+
+.footer{
+  padding-top: 5px;
+  font-weight: 500;
+  margin-top: 20px;
+  height: 2rem;
+  color: rgb(233, 233, 233);
+  position: absolute;
+  bottom: -1;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+.delbtn{
+  margin-bottom: 10px;
+  border: 2px solid red;
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  padding: 5px;
+  font-size: 15px;
+
+}
+
+.delbtn:hover{
+  background-color: red;
+  color: white;
 }
